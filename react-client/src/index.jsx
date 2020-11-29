@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import AddItems from './components/AddItems.jsx';
+import Signup from './components/Signup.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -37,8 +37,8 @@ class App extends React.Component {
 
   render () {
     return (<div>
-      <h1>quote</h1>
-      <AddItems onSubmit={this.submit.bind(this)}/>
+      <h1></h1>
+      <Signup />
     </div>)
   }
 }

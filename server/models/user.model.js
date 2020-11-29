@@ -10,7 +10,21 @@ const userSchema = new Schema({
         unique:true,
         trim: true
     },
-    password : String
+    password : {
+        type: String,
+        minlength: 5,
+        required: true
+        
+    },
+    phone: {
+        type: Number,
+        min:10
+    },
+    address:{
+        type: String,
+        minlength: 4,
+        required: true
+    }
     
 });
 
